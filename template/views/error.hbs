@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* reset defaault css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #6b8b7e2d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* body background */
+header::before{
+    content: ' ';
+    background: url('images/stethoscope.png') no-repeat center;
+    background-size: 40% 80%;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* header */
+header {
+    height: 15vh;
+    margin: 0 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.active {
+    color: #22d381;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+    </style>
+
+</head>
+<body>
+    {{>header}}
+    <h2>{{errorMsg}}</h2>
+</body>
+</html>

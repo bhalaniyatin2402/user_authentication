@@ -1,0 +1,16 @@
+<header>
+    <div class="logo">
+        <img src="../images/logo.png" alt="logo">
+    </div>
+    <nav>
+        <ul>
+            <li> <a href="/" class="active"> Home </a> </li>
+            <li> <a href="/about"> About Us </a> </li>
+            {{#if isLoggedIn}}
+                <li> <a href="/myaccount"> My Account </a> </li>
+            {{else}}
+                <li> <a href="/login"> LogIn/SignIn </a> </li>
+            {{/if}}
+        </ul>
+    </nav>
+</header>

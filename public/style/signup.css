@@ -1,0 +1,154 @@
+/* reset defaault css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #76868027;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* body background */
+header::before{
+    content: ' ';
+    background: url('images/stethoscope.png') no-repeat center;
+    background-size: 40% 80%;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* header */
+header {
+    height: 15vh;
+    margin: 0 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.active {
+    color: #22d380;
+}
+
+main {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 25vw;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px  #2e2c2c;
+}
+
+input, textarea, button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+#gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+label[for="male"], label[for="female"]{
+    display: flex;
+    gap: 10px;
+}
+
+.name, .email, .phone, .password, .gender {
+    width: 100%;
+}
+
+form h2 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input {
+    height: 30px;
+    padding: 5px 10px;
+}
+
+textarea {
+    height: 100px;
+    padding: 5px 10px;
+}
+
+#register {
+    color: #ffff;
+    background-color: #22d380;
+    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#SignInFooter {
+    margin-top: 15px;    
+}
+
+#SignInFooter a {
+    font-size: 0.75rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#SignInFooter li {
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style/login.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="/"> Home </a> </li>
+                <li> <a href="/about"> About Us </a> </li>
+                <li> <a href="/contact" class="active"> Contact Us </a> </li>
+                <li> <a href="/login" class="active"> Login </a> </li>
+            </ul>
+        </nav>
+    </header> -->
+    {{>header}}
+
+    <main>
+        <form action="/login" method="POST">
+            <h2>Log In</h2>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your Phone Number" name="password" required>
+            </div>
+            <input type="submit" value="Log In" id="login">
+
+            <div id="LoginFooter">
+                <ul>
+                    <li><a href="/signup">Create New Account</a></li>
+                    <li><a href="/forgotpassword">forgot password?</a></li>
+                </ul>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
