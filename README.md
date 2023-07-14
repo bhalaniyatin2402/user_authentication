@@ -1,6 +1,6 @@
 # User Authentication using Express, Mongoose, Handlebars
 
-## Featues
+## Features
 - #### Login
 - #### Signup
 - #### Forgot Password
